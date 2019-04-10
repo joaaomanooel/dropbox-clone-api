@@ -1,0 +1,32 @@
+{
+  "name": "dropbox-clone-api",
+  "version": "0.1.0",
+  "description": "Dropbox example clone API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaaomanooel/dropbox-clone-api.git"
+  },
+  "keywords": [
+    "Dropbox",
+    "node.js",
+    "socket.io",
+    "javascript",
+    "js"
+  ],
+  "author": "João Manoel Neto <joaaomanooel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joaaomanooel/dropbox-clone-api/issues"
+  },
+  "homepage": "https://github.com/joaaomanooel/dropbox-clone-api#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "husky": "^1.3.1"
+  }
+}
