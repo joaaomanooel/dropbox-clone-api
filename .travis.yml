@@ -4,10 +4,9 @@ services: mongodb
 script: ''
 deploy:
   provider: heroku
-  api_key:
-    secure: ZLZ8Faw6utlpxAvbSsFHHogv2yEJivYdkDb22CQSvo/EwdgYlscLHe166rak7+rvthVaMJH5sduEV1G5hC1AAtP/dux3oe8pTmbqi84p7xPKFsgGsSFS19F0tg1767uoL31DTihWgV9DwvNtIpoXilLwHELBeY1pVA2ArHN1FlO7yjjZ/0e5mx91PVYXnZuDB9OIiLyiSA6a09IRhOgKyiD79SIXH53Zbp/f8MPJyP1u4Lmv2j8uxCAqNwzsyY+63gXsnkilM35ewiXA1fPJWH063fJN1/6LvChbQCHbQuVW0jhDbIqIJ7ZbwXdeI3q5W3ouXuV7lZTWCLR13WdfhbF2P7ugclKydJToS9Mv8d/chIRbsE6OBgi9ZRWm2JWkZ3KGFNesN24Yszy4QXlGb+5da+QprWpiOt5UbwNU6VgcTFqvN17xnrMdxbu5HM4+p/WCDGWT4f/AE7PhSQMXoSQUmbirWgWeVSQUNYP5NgLZ8EmsqKVft2kc+3w5R5cG7jQ23ufwvuOlnMKGFBjdpn50pbEeEmddXjvRgCDQM2o/b9T+GOlJAVOde6rS7rt6z/wpu0qLKvzKaa7a3cXw7zJmjjNrFtYwsw7iI3xtgsmOkYV8PXhf3d6iqgeroAGkKb74sqUEVQAfYd8tmG10Dn7uiGjKwyuo3tzO5J9ii3o=
   app: dropbox-clone-api
   on:
     branch: master
     all_branches: false
     repo: joaaomanooel/dropbox-clone-api
+
