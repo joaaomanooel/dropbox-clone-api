@@ -4,7 +4,7 @@ services: mongodb
 script: ''
 deploy:
   provider: heroku
-  api-key:
+  api_key:
    secure: $HEROKU_API_KEY
   app: dropbox-clone-api
   on:
