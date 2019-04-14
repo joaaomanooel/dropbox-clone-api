@@ -1,12 +1,16 @@
 const express = require('express');
+const cors = require('cors');
 const mongoose = require('mongoose');
 const path = require('path');
-const socket = require('socket.io');
+const socketIo = require('socket.io');
 const { Server } = require('http');
 
 const app = express();
+app.use(cors());
+
 const server = Server(app);
-const io = socket(server);
+const io = socketIo(server);
+io.on('connection', socket => socket.on('connectRoom', box => socket.join(box)));
 
 mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true,
@@ -22,4 +26,4 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/files', express.static(path.resolve(__dirname, '../tmp')));
 app.use('/api/v1', require('./routes'));
 
-module.exports = server ;
+module.exports = server;
