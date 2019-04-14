@@ -20,7 +20,9 @@ const File = new mongoose.Schema(
 File
   .virtual('url')
   .get(function getFileUrl() {
-    return `http://localhost:5000/files/${encodeURIComponent(this.path)}`;
+    const { URL, PORT } = process.env;
+    const url = URL || `http://localhost:${PORT || 5000}`;
+    return `${url}/files/${encodeURIComponent(this.path)}`;
   });
 
 module.exports = mongoose.model('File', File);
