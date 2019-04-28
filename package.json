@@ -1,6 +1,6 @@
 {
   "name": "dropbox-clone-api",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Dropbox example clone API",
   "main": "index.js",
   "scripts": {
