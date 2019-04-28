@@ -8,7 +8,7 @@ const store = async (req, res) => {
   const newFile = await File.create({ title: file.originalname, path: file.key });
   box.files.push(newFile);
   await box.save();
-  io.sockets.in(box._id).emit('file', file);
+  io.sockets.in(box._id).emit('file', newFile);
   return res.status(200).send(newFile);
 };
 
